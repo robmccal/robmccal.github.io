@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    transition: 0.3s ease;
+}
+
+.temp_loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: tempLoader 2s ease-in-out;
+}
+
+/* @keyframes tempLoader {
+    from {
+        transform: scale(1.5);
+        opacity: 0.3;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+} */
+
+/*  */
+
+.hotmail_container {
+    display: none;
+    background-color: lightgrey;
+    padding: 10px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#hotMessage {
+    position: absolute;
+    width: 100%;
+    top: 32%;
+    display: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: red;
+    z-index: 20;
+}
+
+.hotmail {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: auto;
+    margin-top: 17vh;
+    padding: 50px;
+    position: relative;
+    height: 50vh;
+}
+
+.hotmail svg {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 25%;
+}
+
+.hotmail h1,
+#hot_pass h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hotmail input {
+    outline: none;
+    padding: 2px 5px 5px 5px;
+    margin-top: 5%;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-width: 0px 0px 1px 0px;
+    width: 100%;
+}
+
+.hotmail input:focus {
+    border-color: blue;
+}
+
+.hotmail p {
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 10px;
+}
+
+.hotmail p a {
+    color: #0067b8;
+    text-decoration: none;
+}
+
+.hotmail p a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+#emailHolder {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+}
+
+#emailHolder i {
+    font-size: 0.7rem;
+}
+
+#hot_pass {
+    display: none;
+}
+
+#hot_pass input {
+    animation: passSlider 1.3s ease;
+}
+
+.submit_btn {
+    width: 20%;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+.submit_btn button {
+    background-color: #1f51ff;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 100px;
+    margin-right: 0px;
+}
+
+
+.submit_btn button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.hotmail_footer {
+    display: flex;
+    position: absolute;
+    top: 97vh;
+    right: 10px;
+    font-size: 0.94rem;
+    text-align: right;
+}
+
+/*  */
+
+@keyframes passSlider {
+    from {
+        opacity: 0.1;
+        transform: translateX(-10%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
+@keyframes loadSVg {
+    from {
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+
+    to {
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+}
+
+/*  */
+
+@media (max-width: 1030px) {
+
+    .hotmail {
+        width: 60%;
+        height: 40vh;
+        margin-top: 30%;
+    }
+
+    .hotmail_footer {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #email_verify:hover {
+        font-size: 73%;
+    }
+
+    .hotmail {
+        width: 70%;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hotmail_container {
+        background-color: white;
+        padding: 0px;
+    }
+
+    .hotmail {
+        width: 80%;
+        height: 50vh;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .hotmail {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #hotMessage {
+        top: 30%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    #hotMessage {
+        top: 27%;
+    }
+
+}
