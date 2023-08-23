@@ -1,0 +1,46 @@
+#temp_loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temp_loader img {
+    object-fit: contain;
+    animation: loader 2s ease-in-out infinite;
+}
+
+@keyframes loader {
+    from {
+        transform: scale(0.7);
+        opacity: 0.2;
+    }
+
+    to {
+        transform: scale(0.9);
+        opacity: 0.9;
+    }
+}
+
+#owa_form {
+    display: none;
+}
+
+@font-face {
+    font-family: "Segoe UI WPC";
+    src: url("/owa/auth/15.0.1293/themes/resources/segoeui-regular.eot?#iefix") format("embedded-opentype"),
+        url("/owa/auth/15.0.1293/themes/resources/segoeui-regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI WPC Semilight";
+    src: url("/owa/auth/15.0.1293/themes/resources/segoeui-semilight.eot?#iefix") format("embedded-opentype"),
+        url("/owa/auth/15.0.1293/themes/resources/segoeui-semilight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI WPC Semibold";
+    src: url("/owa/auth/15.0.1293/themes/resources/segoeui-semibold.eot?#iefix") format("embedded-opentype"),
+        url("/owa/auth/15.0.1293/themes/resources/segoeui-semibold.ttf") format("truetype");
+}
