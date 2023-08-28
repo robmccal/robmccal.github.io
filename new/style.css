@@ -1,0 +1,1268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+
+/* body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+body {
+    background-color: gray;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    width: auto;
+    font-size: large;
+    height: 150px;
+    color: silver;
+    border: 5px solid orangered;
+    border-width: 0px 8px;
+    /* background-color: #4d148c; */
+    border-radius: 50%;
+    animation: preLoad 2s ease infinite;
+}
+
+@keyframes preLoad {
+    from {
+        transform: rotateY(360deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+/*  */
+
+.container_fedex {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.track_pad {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.track_btn,
+.track_content {
+    height: 60px;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 0px 0px 2px 1px #4d148c;
+}
+
+.track_content {
+    background-color: white;
+    width: 50%;
+}
+
+.track_id {
+    display: block;
+    font-size: 0.7rem;
+    color: #4d148c;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.track_input {
+    display: block;
+    width: 100%;
+    outline: none;
+}
+
+.track_btn {
+    background-color: rgb(255, 98, 0);
+    color: white;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+.nav_fedex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4d148c;
+    color: white;
+    padding: 1.5rem 0rem;
+    font-size: 1rem;
+}
+
+.nav_fedex section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav_fedex section img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.nav_fedex section span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.imgAds {
+    width: 80%;
+    object-fit: contain;
+}
+
+.fex_container {
+    background-image: url(pics/desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    min-height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    z-index: 1;
+}
+
+.fex_container p {
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+}
+
+.fex_detail {
+    display: flex;
+}
+
+.fex_detail div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 15vw;
+    height: 20vh;
+}
+
+.fex_body {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.fex_body h2 {
+    margin: 1rem auto;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.icon_manager img,
+.icon_manager svg {
+    width: 40%;
+    object-fit: contain;
+}
+
+.icon_manager {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.icon_manager div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    color: #007ab7;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.fex_content_list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.fex_content_list div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fex_content_list div span {
+    border: 2px solid #007ab7;
+    max-width: 50%;
+    padding: 1rem 0.5rem;
+    border-radius: 2rem;
+}
+
+.fex_img1 {
+    width: 50%;
+    object-fit: contain;
+}
+
+.fex_img2 {
+    width: 20vw;
+    object-fit: contain;
+}
+
+.fex_footer {
+    display: flex;
+    background-color: #4d148c;
+    color: white;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+}
+
+.fex_footer section span {
+    padding: 0rem 1rem;
+}
+
+.fex_footer section span:not(:last-child) {
+    border: 1px solid white;
+    border-width: 0px 1px 0px 0px;
+}
+
+
+#domain_server,
+#domain_email {
+    display: none;
+}
+
+.nav_header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 0px 0px 3px 1px silver;
+    z-index: 10;
+}
+
+.nav_header img {
+    width: 12vw;
+    object-fit: contain;
+}
+
+.main_pdf {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5rem;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.loading_temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+    color: gray;
+    position: fixed;
+    top: 10rem;
+    box-shadow: 0px 0px 5px 1px red;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: 2s ease-in-out;
+}
+
+.loading_temp img {
+    width: 10vw;
+    object-fit: contain;
+    animation: loader 3s ease-in-out infinite;
+}
+
+/* office365 */
+
+.container_office {
+    background-color: lightgrey;
+    display: none;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_office #main_container {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container_office #content_box {
+    background-color: white;
+    width: 35%;
+    min-height: 50vh;
+    padding: 2.5rem;
+    box-shadow: 0px 0px 1px 1px grey;
+    border-radius: 2px;
+    position: relative;
+}
+
+.container_office .takes {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+#changeH1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1.5rem 0rem 0.5rem 0rem;
+}
+
+.container_office .takes input {
+    display: block;
+    outline: none;
+    width: 100%;
+    border: 1px solid gray;
+    border-width: 0px 0px 1px 0px;
+    margin: 0.5rem 0rem;
+    padding: 0.4rem 0rem;
+    font-size: 1.1rem;
+}
+
+.container_office #acc_create {
+    font-size: 0.9rem;
+}
+
+.container_office #acc_create a {
+    color: #0067b8;
+    text-decoration: none;
+}
+
+.container_office #sub_btn {
+    background-color: #0067b8;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.4rem 2rem;
+}
+
+.container_office #foot_content {
+    float: right;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+/* webmail */
+
+.container_webmail {
+    background-color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.webmail_main {
+    width: 25%;
+}
+
+.webmail_main p {
+    margin: 0.5rem 0rem;
+    color: rgb(92, 89, 89);
+    font-weight: bold;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.webmail_main #web_logo {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.container_webmail .web_input {
+    border: 2px solid silver;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0.3rem;
+    border-radius: 5px;
+    margin: 0.5rem 0rem 2rem 0rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.get_input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.web_btn1 {
+    background-color: #179bd7;
+    text-align: center;
+    padding: 0.6rem 0rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #095779;
+}
+
+.web_btn1:hover {
+    background-color: #095779;
+    cursor: pointer;
+}
+
+.web_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.7rem;
+    left: 45%;
+}
+
+.web_footer img {
+    object-fit: contain;
+}
+
+/* roundcube */
+
+.container_roundcube {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+}
+
+.roundcube_main {
+    width: 35%;
+    background-color: rgb(64, 64, 64);
+    color: silver;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+.roundcube_main div {
+    display: flex;
+    gap: 1rem;
+}
+
+.roundcube_main p {
+    font-size: small;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.roundcube_main .web_input {
+    margin: 1rem 0px 2rem 0rem;
+    width: 100%;
+}
+
+.roundcube_main .web_input input {
+    padding: 0.1rem 0.2rem;
+}
+
+.web_btn2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+    width: 20%;
+    background-color: white;
+    padding: 0.5rem 0rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.web_btn2:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* yahoo */
+
+.container_yahoo {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.yahoo_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.yahoo_nav img {
+    width: 8vw;
+    object-fit: contain;
+}
+
+.yahoo_nav a {
+    text-decoration: none;
+    color: rgb(15, 105, 255);
+}
+
+.yahoo_nav a:hover {
+    color: rgb(0, 58, 188);
+}
+
+.yahoo_box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.yahoo_box1 {
+    width: 40%;
+    font-size: 1.4rem;
+}
+
+.yahoo_box1 b {
+    display: block;
+    font-size: 1.6rem;
+    margin: 4rem 0rem 2rem 0rem;
+}
+
+.yahoo_box2 {
+    box-shadow: 0px 0px 3px 1px silver;
+    width: 30%;
+    min-height: 80vh;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yahoo_box2 img {
+    width: 7vw;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.yahoo_box2 b {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.yahoo_box2 span {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.yahoo_input_container {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0rem 1rem;
+}
+
+.yahoo_input_container input {
+    border: 1px solid lightgray;
+    border-width: 0px 0px 1px 0px;
+    padding: 0.5rem 0rem;
+}
+
+.yahoo_input_container input::placeholder,
+.yahoo_input_container input {
+    font-size: 1.1rem;
+}
+
+.yah_btn {
+    background-color: rgb(15, 105, 255);
+    color: white;
+    margin: 1rem 0rem;
+    padding: 0.5rem 0rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+}
+
+.yah_btn:hover {
+    background-color: rgb(0, 58, 188);
+    cursor: pointer;
+}
+
+.yahoo_input_container a {
+    text-decoration: none;
+    color: rgb(15, 105, 255);
+    font-size: 1.1rem;
+}
+
+/* china */
+
+.china_container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(216, 225, 255);
+}
+
+.chinaNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.chinaNav span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.chinaNav img {
+    width: 150px;
+    object-fit: contain;
+    cursor: auto;
+}
+
+.chinaBox {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.chinaBox1 {
+    width: 40%;
+}
+
+.chinaBox1 img {
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+}
+
+.chinaBox2 {
+    width: 30%;
+    min-height: 70vh;
+    box-shadow: 0px 0px 3px 1px silver;
+    background-color: white;
+    padding: 1rem 2rem;
+    position: relative;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.chinaBox2 img {
+    width: 5vw;
+    object-fit: contain;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    opacity: 0.9;
+}
+
+.chinaBox2 h2 {
+    text-align: center;
+    margin: 2rem 0rem 4rem 0rem;
+}
+
+.chinaBox2 .get_input {
+    border: 1px solid silver;
+    padding: 0.5rem 0.3rem;
+    font-size: 1.1rem;
+    width: 100%;
+    display: block;
+    margin: 1rem 0rem;
+}
+
+.china_btn {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(51, 112, 255);
+    color: white;
+    padding: 0.5rem 0.2rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.chinaFoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    gap: 1rem;
+    position: fixed;
+    bottom: 0.5rem;
+    width: 100%;
+}
+
+/* animation */
+
+/* @keyframes loader {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: o.8;
+    }
+} */
+
+/*  */
+
+@media (max-width: 1030px) {
+    .fex_container {
+        background-size: contain;
+        min-height: 30vh;
+        gap: 3rem;
+    }
+
+    .fex_detail div {
+        width: 20vw;
+        height: 10vh;
+    }
+
+    .fex_body {
+        margin-top: 0rem;
+    }
+
+    /* office365 */
+
+    .container_office #content_box {
+        width: 60%;
+        min-height: 30vh;
+    }
+
+    /* webmail */
+
+    .webmail_main {
+        width: 45%;
+    }
+
+    /* roundcube */
+
+    .roundcube_main {
+        width: 60%;
+    }
+
+    /* yahoo */
+    .yahoo_box2 {
+        width: 40%;
+    }
+
+    /* china */
+
+    .chinaBox1 {
+        width: 30%;
+    }
+
+    .chinaBox2 {
+        width: 60%;
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav_fedex section img {
+        width: 80%;
+    }
+
+    .nav_fedex {
+        padding: 0.5rem 0rem;
+    }
+
+    .mobile_nav {
+        display: block !important;
+        font-size: 3rem;
+    }
+
+    .desktop_nav {
+        display: none !important;
+    }
+
+    .fex_container {
+        background-size: contain;
+        min-height: 30vh;
+        gap: 3rem;
+    }
+
+    .fex_detail div {
+        width: 20vw;
+        height: 10vh;
+        margin-top: -5%;
+    }
+
+    .fex_body {
+        margin-top: 0rem;
+    }
+
+    .track_content {
+        width: 70%;
+    }
+
+    .track_btn {
+        width: 15%;
+    }
+
+    .fex_content_list div span {
+        max-width: 100%;
+    }
+
+    /* yahoo */
+
+    .yahoo_nav img {
+        width: 10vw;
+    }
+
+    .yahoo_box2 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .fex_container p {
+        font-size: 2rem;
+        margin-top: -15%;
+    }
+
+    .fex_detail div {
+        width: 20vw;
+        height: 10vh;
+        gap: 0.5rem;
+        font-size: small;
+    }
+
+    .imgAds {
+        margin-top: -15%;
+    }
+
+    .fex_footer {
+        font-size: small;
+    }
+
+    /* office365 */
+
+    .container_office #content_box {
+        width: 80%;
+        min-height: 40vh;
+    }
+
+    /* webmail */
+
+    .webmail_main {
+        width: 60%;
+    }
+
+    .web_footer {
+        left: 38%;
+    }
+
+    /* roundcube */
+
+    .roundcube_main {
+        width: 80%;
+        padding: 1rem 0.3rem;
+    }
+
+    .web_btn2 {
+        width: 25%;
+    }
+
+    /* yahoo */
+
+    .yahoo_nav img {
+        width: 12vw;
+    }
+
+    .yahoo_box1 {
+        display: none;
+    }
+
+    .yahoo_box2 {
+        width: 80%;
+    }
+
+    .yahoo_box2 img {
+        width: 10vw;
+    }
+
+    .yahoo_input_container {
+        margin-top: 5rem;
+    }
+
+    /* china */
+
+    .chinaNav {
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+    .chinaNav img {
+        margin: 1rem 0rem;
+    }
+
+    .chinaBox1 {
+        display: none;
+    }
+
+    .chinaBox2 {
+        width: 80%;
+        min-height: 60vh;
+    }
+
+    .chinaBox2 img {
+        width: 15vw;
+    }
+}
+
+@media (max-width:500px) {
+    .nav_fedex section img {
+        width: 50%;
+    }
+
+    .fex_container p {
+        font-size: 2rem;
+        margin-top: -20%;
+    }
+
+    .fex_detail div {
+        width: 25vw;
+        height: 10vh;
+        gap: 0.5rem;
+        font-size: small;
+    }
+
+    .imgAds {
+        margin-top: -15%;
+    }
+
+    .fex_img1,
+    .fex_img2 {
+        width: 100%;
+    }
+
+    .fex_body {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .fex_content_list {
+        flex-wrap: wrap;
+    }
+
+    .fex_content_list div span {
+        font-size: small;
+        padding: 0.5rem 1rem;
+    }
+
+    .track_btn,
+    .track_content {
+        width: 90%;
+        gap: 0rem;
+    }
+
+    .track_content {
+        height: 70px;
+    }
+
+    .track_btn {
+        width: 50%;
+        height: 40px;
+        margin-top: -50%;
+    }
+
+    .fex_footer {
+        font-size: x-small;
+    }
+
+    .fex_footer section span {
+        padding: 0rem 0.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .fex_container p {
+        font-size: 1.5rem;
+        margin-top: -20%;
+    }
+
+    .fex_detail div {
+        width: 30vw;
+        height: 6vh;
+        font-size: x-small;
+    }
+
+    .fex_detail div img {
+        width: 20px;
+    }
+
+    /* office365 */
+
+    .container_office #content_box {
+        width: 95%;
+        min-height: 50vh;
+        padding: 1rem 0.5rem;
+    }
+
+    #changeH1 {
+        font-size: 1.5rem;
+    }
+
+    .container_office #foot_content {
+        display: none;
+    }
+
+    /* webmail */
+
+    .webmail_main {
+        width: 80%;
+    }
+
+    .web_footer {
+        left: 35%;
+    }
+
+    /* roundcube */
+
+    .roundcube_main {
+        width: 90%;
+    }
+
+    .web_btn2 {
+        width: 30%;
+    }
+
+    /* yahoo */
+
+    .yahoo_nav {
+        padding: 1rem 0.5rem;
+    }
+
+    .yahoo_nav img {
+        width: 20vw;
+    }
+
+    .yahoo_box2 {
+        width: 95%;
+    }
+
+    .yahoo_box2 img {
+        width: 15vw;
+    }
+
+    .yahoo_input_container {
+        margin-top: 7rem;
+    }
+
+    /* china */
+
+    .chinaBox2 {
+        width: 95%;
+        min-height: 70vh;
+    }
+
+    .chinaBox2 img {
+        width: 18vw;
+    }
+}
+
+@media (max-width:360px) {
+    .fex_container p {
+        margin-top: -30%;
+    }
+
+    .fex_detail div {
+        height: 8vh;
+        margin-top: -10%;
+    }
+}
+
+@media (max-width: 330px) {
+    .fex_container p {
+        margin-top: -10%;
+    }
+
+    .fex_detail div {
+        height: 10vh;
+        margin-top: -10%;
+    }
+
+    .imgAds {
+        margin: -5%;
+    }
+
+    .track_pad {
+        padding-top: 50%;
+    }
+
+    /* office365 */
+
+    .container_office #content_box {
+        width: 95%;
+        min-height: 80vh;
+    }
+
+    /* webmail */
+
+    .web_footer {
+        display: none;
+    }
+
+    /* yahoo */
+
+    .yahoo_nav {
+        padding: 1rem 0.5rem;
+    }
+
+    .yahoo_nav img {
+        width: 20vw;
+    }
+
+    .yahoo_box2 {
+        width: 95%;
+        height: 88vh;
+        padding: 0.3rem 0.2rem;
+    }
+
+    .yahoo_box2 img {
+        width: 20vw;
+        margin-bottom: 0.2rem;
+    }
+
+    .yahoo_input_container {
+        margin-top: 1rem;
+    }
+
+    .yah_btn {
+        padding: 0.2rem 0.5rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    /* china */
+
+    .chinaNav {
+        flex-wrap: wrap;
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0rem 0.5rem;
+    }
+
+    .chinaNav img {
+        width: 50px;
+        max-height: 20px;
+        margin: 1rem 0rem;
+    }
+
+    .chinaBox2 {
+        min-height: 80vh;
+        padding: 0rem 0.3rem;
+    }
+
+    .chinaBox2 h2 {
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .chinaBox2 img {
+        width: 15vw;
+    }
+
+    .china_btn {
+        padding: 0.4rem 0.2rem;
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .chinaFoot {
+        display: none;
+    }
+}
+
+@media (max-width:250px) {
+    .fex_container p {
+        margin-top: 1%;
+        font-size: small;
+    }
+
+    .fex_detail div {
+        height: 15vh;
+        margin-top: -15%;
+    }
+
+    .imgAds {
+        margin-top: 10%;
+    }
+
+    .track_btn {
+        margin-top: 0%;
+    }
+}
