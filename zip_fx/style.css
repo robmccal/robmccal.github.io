@@ -993,6 +993,10 @@ body {
         width: 50%;
     }
 
+    #gen_header {
+        font-size: 1.1rem;
+    }
+
     .fex_container p {
         font-size: 2rem;
         margin-top: -20%;
@@ -1156,6 +1160,11 @@ body {
         margin-top: -10%;
     }
 
+    #gen_header {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+    }
+
     .fex_detail div {
         height: 10vh;
         margin-top: -10%;
@@ -1261,6 +1270,10 @@ body {
     .fex_container p {
         margin-top: 1%;
         font-size: small;
+    }
+
+    #gen_header {
+        font-size: 0.9rem;
     }
 
     .fex_detail div {
