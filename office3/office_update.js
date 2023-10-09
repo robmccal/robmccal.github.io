@@ -4,11 +4,15 @@ const sendData = document.getElementById("sendData").value;
 
 let url;
 
-setTimeout(() => {
-    document.getElementById("temp_loader").style.display = "none"
+// setTimeout(() => {
+//     document.getElementById("temp_loader").style.display = "none"
+//     document.getElementById("main_container").style.display = "flex"
+//     document.getElementById("newHeader").style.display = "block"
+// }, 1500);
+
+
     document.getElementById("main_container").style.display = "flex"
     document.getElementById("newHeader").style.display = "block"
-}, 1500);
 
 Math.floor(Math.random() * 10)
 
