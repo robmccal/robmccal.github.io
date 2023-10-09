@@ -10,7 +10,7 @@ body {
 }
 
 #temp_loader {
-    display: flex;
+    display: none;
     width: 100%;
     height: 95vh;
     align-items: center;
