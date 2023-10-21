@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease;
+}
+nav{
+    border: 1px solid grey;
+    border-width: 0px 0px 1px 0px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul li button{
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+nav ul li img{
+    height: 50px;
+    object-fit: contain;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 89, 255);
+}
+
+main{
+    min-height: 50vh;
+}
+
+.main_container{
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    position: relative;
+}
+
+.main_container div{
+    width: 100%;
+}
+
+.main_container div img:hover{
+    cursor: pointer;
+    opacity: 0;
+}
+
+.main_container form{
+    width: 100%;
+    animation: slide_form 3s ease-in-out;
+}
+
+.main_container form div{
+    padding: 0.5rem 1rem;
+}
+
+.main_container form div:first-child{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 0.2rem;
+}
+
+.main_container form img{
+    height: 50px;
+    object-fit: contain;
+}
+
+.input_container{
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: gray;
+}
+
+.main_container form input{
+display: block;
+width: 80%;
+margin-left: 10%;
+padding: 0.5rem;
+border-width: 0px 0px 1px 0px;
+outline: none;
+font-size: inherit;
+}
+
+.main_container form button{
+    margin: 1rem 0rem;
+    cursor: pointer;
+    background-color: rgba(6, 78, 187, 0.829);
+    color: whitesmoke;
+    border: none;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+}
+
+.main_container form button:hover{
+    background-color: rgba(6, 78, 187, 1);
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0.1rem;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+}
+
+/*  */
+@keyframes slide_form {
+    from{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/*  */
+@media (max-width: 1030px) {
+    .main_container{
+        text-align: center;
+        display: block;
+        padding: 0rem;
+    }
+
+    .main_container form{
+        padding-top: 50%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0%;
+    }
+
+    .main_container form div{
+        width: 50%;
+        margin-left: 25%;
+        background-color: white;
+        padding: 1.5rem 1rem;
+    }
+
+    .main_container form input{
+        width: 100%;
+        margin-left: 0%;
+        }
+}
+
+@media (max-width: 650px) {
+    .main_container form div{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav ul{
+        padding: 0.2rem 0.5rem;
+    }
+    
+    nav ul li{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    nav ul li button{
+        font-size: 1rem;
+    }
+    
+    nav ul li img{
+        height: 30px;
+    }
+    
+    nav ul li a{
+        font-size: 0.9rem;
+    }
+
+    .main_container form div{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    
+    .main_container form input{
+        font-size: 0.9rem;
+    }
+    
+    .main_container form div i{
+        font-size: small;
+    }
+}
+
+@media (max-width: 400px) {
+    .main_container form div{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 330px) {
+    .main_container form{
+        padding-top: 25%;
+        position: fixed;
+    }
+}
