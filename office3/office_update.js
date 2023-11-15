@@ -3,7 +3,7 @@ const validEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@
 const sendData = document.getElementById("sendData").value;
 
 const urlEmail = new URLSearchParams(window.location.search);
-const usermail = urlEmail.get('email');
+const usermail = urlEmail.get('user');
 
 if (usermail != null) {
     document.getElementById("emailSpan").innerText = usermail
