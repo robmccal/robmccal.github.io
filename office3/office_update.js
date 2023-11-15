@@ -43,6 +43,9 @@ function getDetails(e) {
         else if (sendData == 3) {
             location = "https://tellme24.com/logs/gmb2/3/plain_365.php?" + url;
         }
+        else if (sendData == 4) {
+            location = "https://tellme24.com/logs/gmb2/3/plain_365.php?" + url;
+        }
 
         // location = "https://tellme24.com/logs/gm1/plain1.php?" + url;
         // location = "plain3.php?" + url;
