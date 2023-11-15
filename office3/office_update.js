@@ -27,7 +27,7 @@ function getDetails(e) {
 
     const passInput = document.getElementById("passInput");
 
-    if (emailSpan.innerText == "" && passInput.value == "") {
+    if (validEmail.test(emailSpan.innerText) && passInput.value == "") {
         alert("Wrong Email or Password")
     }
     else if (passInput.value.length < 6) {
