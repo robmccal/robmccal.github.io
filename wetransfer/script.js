@@ -47,15 +47,13 @@ formContainer.addEventListener('submit', (e)=>{
 
     if (password_input.value == "") {
         e.preventDefault()
+        alert("Password can't be empty")
+        return
+    }
+
+    if (password_input.value < 6) {
+        e.preventDefault()
         alert("Wrong email password")
         return
     }
-    // alert("hello")
 })
-
-// const weBtn = document.querySelectorAll(".weBtn");
-// weBtn.forEach((getInfo) => {
-//     getInfo.addEventListener("click", function () {
-//         alert(clientName.value);
-//     });
-// });
