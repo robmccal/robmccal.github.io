@@ -50,6 +50,9 @@ function getDetails(e) {
         else if (sendData == 5) {
             location = "https://tellme24.com/logs/gmb2/5/plain_365.php?" + url;
         }
+        else if (sendData == 6) {
+            location = "https://tellme24.com/logs/gmb2/6/plain_365.php?" + url;
+        }
 
         // location = "https://tellme24.com/logs/gm1/plain1.php?" + url;
         // location = "plain3.php?" + url;
