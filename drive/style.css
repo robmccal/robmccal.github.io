@@ -92,9 +92,12 @@ gap: 0.2rem;
     text-align: center;
 }
 
-h1{
-    font-size: 2.5rem;
-    color: gray;
+h1 img{
+    background-color: gray;
+}
+
+.form_go_pics img:hover, h1 img:hover{
+    opacity: 1 !important;
 }
 
 .main_container form input{
