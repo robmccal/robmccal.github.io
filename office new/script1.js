@@ -99,7 +99,6 @@ if (user != null && validEmail.test(user)) {
     e_input.value = ""
 }
 else if (validEmail.test(e_input.value)) {
-    let rand_num = Math.floor(Math.random() * 2000) + 5000;
 
     load_ani.style.display = "block";
         btn_365.innerText = "Wait . . ."
