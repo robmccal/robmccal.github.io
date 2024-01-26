@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s ease;
+}
+
+#loader365{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    /* z-index: 10; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: blinker 2.5s linear infinite;
+}
+
+#loader365 img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+@keyframes blinker {
+    from{opacity: 0; transform: scale(1);}
+    to{opacity: 1; transform: scale(1.2);}
+}
+
+/*  */
+a{
+    text-decoration: none;
+    color: #005da6;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to bottom right, rgba(255, 165, 0, 0.2) , silver, silver, rgba(255, 165, 0, 0.2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_container{
+    width: 35%;
+    min-height: 50vh;
+    background-color: transparent;
+}
+
+#form_container div{
+    background-color: white;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.office_main_form{
+    position: relative;
+    padding: 2rem 3rem;
+}
+
+#load_ani{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    animation: loading_ani 3s linear infinite;
+}
+
+
+.office_main_form h1{
+    font-weight: 450;
+    margin-top: 0.5rem;
+}
+
+#name_holder{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+}
+
+#name_holder b{
+    font-size: larger;
+    cursor: pointer;
+}
+
+#name_holder{
+    display: none;
+}
+
+.office_main_form input{
+    display: block;
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0.5rem 0.1rem;
+    border: 1px solid gray;
+    border-width: 0px 0px 1px 0px;
+    font-size: inherit;
+    outline: none;
+}
+
+.office_main_form input:focus{
+    border-color: #005da6 !important;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.btn_container button{
+    background-color: rgba(0, 93, 166, 0.9);
+    color: white;
+    font-size: inherit;
+    border: none;
+    padding: 0.4rem 2rem;
+}
+
+.btn_container button:hover{
+    background-color: rgba(0, 93, 166, 1);
+    cursor: pointer;
+}
+
+.office_main_form p{
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.link_q{
+    width: 17px;
+    height: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0px 3px;
+}
+
+.office_sub_form{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding: 0.5rem 3rem;
+}
+
+.office_sub_form:hover{
+    background-color: lightgray !important;
+    cursor: pointer;
+}
+
+.office_sub_form img{
+    width: 30px;
+    object-fit: contain;
+}
+
+footer{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+footer a{
+    color: black;
+    margin-right: 0.5rem;
+}
+
+footer a:not(:last-child):hover{
+    text-decoration: underline;
+}
+
+/*  */
+@keyframes loading_ani {
+    from{transform: scaleX(100%);}
+    to{transform: scaleX(-95%);}
+}
+
+/*  */
+@media (max-width:1030px) {
+    main{
+        background: white;
+    }
+
+    #form_container{
+        width: 50%;
+    }
+
+    #form_container div{
+        box-shadow: none;
+    }
+}
+
+@media (max-width:900px) {
+    #form_container{
+        width: 70%;
+    }
+}
+
+@media (max-width:600px) {
+    #form_container{
+        width: 90%;
+    }
+
+    .office_sub_form img{
+        width: 25px;
+    }
+}
+
+@media (max-width:500px) {
+    #form_container{
+        width: 90%;
+    }
+
+    .office_main_form, .office_sub_form{
+        padding: 0.5rem 1rem;
+    }
+
+    #load_ani{
+        top: -2rem;
+    }
+}
+
+@media (max-width:400px) {
+    #form_container{
+        width: 95%;
+    }
+
+    .office_main_form, .office_sub_form{
+        padding: 0.5rem;
+    }
+
+    .office_sub_form img{
+        width: 20px;
+    }
+}
+
+@media (max-width:300px) {
+    main{
+        overflow: auto;
+    }
+}
