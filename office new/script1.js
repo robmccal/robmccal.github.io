@@ -40,6 +40,9 @@ sub_btn.addEventListener("submit", (e)=>{
         else if (validEmail.test(user)) {
             getMail(user) 
         }
+        else{
+            e_input.style.borderColor = "red";
+        }
         
     }
 
