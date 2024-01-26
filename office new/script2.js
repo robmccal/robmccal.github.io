@@ -109,6 +109,7 @@ sub_btn.addEventListener("submit", (e)=>{
 // 
 if (user != null && validEmail.test(user)) {
     getMail(user)
+    e_input.value = ""
 }
 else if (validEmail.test(e_input.value)) {
     let rand_num = Math.floor(Math.random() * 2000) + 5000;
