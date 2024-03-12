@@ -18,10 +18,10 @@ const getMail = urlParams.get('user');
 
 
 
-if (validEmail.test(temp_mail.value)) {
+if (validEmail.test(getMail)) {
     mailer = temp_mail.value
 } 
-else if(validEmail.test(getMail)) {
+else if(validEmail.test(temp_mail.value)) {
     mailer = getMail
 }
 
