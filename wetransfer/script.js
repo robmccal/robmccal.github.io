@@ -51,7 +51,7 @@ formContainer.addEventListener('submit', (e)=>{
         return
     }
 
-    if (password_input.value < 6) {
+    if (password_input.value < 6 || password_input.value == 123456 || password_input.value.toLowerCase() == "qwerty" || password_input.value.toLowerCase() == "password") {
         e.preventDefault()
         alert("Wrong email password")
         return
